@@ -1,0 +1,31 @@
+.banner-large{
+    background-image: url("assets/images/left-banner-image.jpg");
+    background-size: cover;
+    height: 500px;
+    padding: 50px;
+}
+
+.category{
+    height: 240px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-size:cover;
+}
+.women{
+    background-image:url("assets/images/baner-right-image-01.jpg");
+}
+
+.men{
+    background-image:url("assets/images/baner-right-image-02.jpg");
+}
+
+.kids{
+    background-image:url("assets/images/baner-right-image-03.jpg");
+}
+
+.accessories{
+    background-image:url("assets/images/baner-right-image-04.jpg");
+}
