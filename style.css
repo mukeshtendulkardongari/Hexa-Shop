@@ -47,3 +47,11 @@
 .expbag{
     background-image:url("assets/images/explore-image-02.jpg")
 }
+.news-title{
+    font-weight:700;
+    font-size:1.1rem;
+}
+.news-p{
+    font-style:italic;
+    color:grey;
+}
