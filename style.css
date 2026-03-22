@@ -117,3 +117,32 @@ footer ul li a:hover{
 .footer-social a:hover{
     color:#cc6666;
 }
+
+
+@media (max-width: 991px) {
+    /* Target the columns directly */
+    footer .footer-col {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 2rem;
+    }
+
+    footer ul.footer-links {
+        padding-left: 0 !important;
+        list-style: none;
+    }
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+    opacity: 1;
+    color: #aaa;
+}
