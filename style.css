@@ -55,3 +55,65 @@
     font-style:italic;
     color:grey;
 }
+
+button{
+    border-radius:0 !important;
+}
+.form-cont{
+    border:1px solid black !important;
+    border-radius:0 !important;
+}
+button.telegram-btn {
+    background-color: #000000 !important; 
+    color: #ffffff !important;
+    border: 1px solid #000000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+button.telegram-btn:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+button.telegram-btn:hover .material-symbols-outlined {
+    color: #000000 !important;
+    transform: translateX(3px) rotate(-10deg);
+}
+footer {
+    background-color: #2a2a2a !important; /* The Hexashop Dark Gray */
+    padding: 60px 0;
+}
+footer h6 {
+    color: #fff;
+    font-weight:700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-bottom: 15px;
+}
+footer ul li {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+footer ul li a{
+    text-decoration:none;
+    color:white;
+    transition:all 0.3s;
+}
+footer ul li a:hover{
+    color:#aaa;
+}
+.footer-logo img {
+    max-width: 160px;
+}
+.footer-social a{
+    color:#ccffff;
+    font-size:20px;
+}
+.footer-social a:hover{
+    color:#cc6666;
+}
