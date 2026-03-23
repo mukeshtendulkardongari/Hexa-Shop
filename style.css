@@ -92,10 +92,30 @@
 @media (max-width: 991px) {
     .category { height: 300px; }
 }
+ 
+
+/* explore */
+
+.category2{
+    margin:10px 0px 10px;
+    height: 260px;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-size:cover;
+    background-color:rgb(217, 215, 215);
+}
+.expwomen{
+    background-image:url("assets/images/explore-image-01.jpg")
+}
+.expbag{
+    background-image:url("assets/images/explore-image-02.jpg")
+}
 
 
 /* newsletter */
-
 
 .news-p{
     font-style:italic;
