@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hexa Shop</title>
     <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTARP ICONS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
-
+<!-- nav bar  -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
     <div class="container">
 
@@ -69,7 +71,7 @@
     </div>
   </div>
 </nav>
-
+<!-- hero section -->
 <div class="container-fluid mt-4">
   <div class="row g-3">
 
@@ -121,20 +123,325 @@
   </div>
 </div>
 
+<!-- carousels  -->
 
-<!-- men
-  -->
-<section class="container">
-<div class="mt-5 me-5">
-    <h1 class="text-dark fw-bold">Men's Latest</h1>
-    <p class="text-muted fst-italic">Details to details is what makes Hexashop different from the other themes.</p>
-</div>
+<section class="container my-5">
+    <div class="mb-4">
+        <h1 class="fw-bold">Men's Latest</h1>
+        <p class="text-muted fst-italic">Details to details is what makes Hexashop different.</p>
+    </div>
+    <div class="position-relative px-md-4">
+        <button class="btn btn-light shadow-sm position-absolute top-50 start-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-men', -1)">&lt;</button>
+        <div id="track-men" class="row flex-nowrap overflow-auto g-4 m-0 hide-scrollbar">
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/men-01.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5>Classic Spring</h5>
+                  <p class="text-muted">$120.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/men-02.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>Air Force 1</h5>
+                    <p class="text-muted">$90.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/men-03.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>Love Print</h5>
+                    <p class="text-muted">$150.00</p>
+                  </div>
+                </div>
+                </div>
 
+
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/men-01.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5>Classic Spring</h5>
+                  <p class="text-muted">$120.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/men-02.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>Air Force 1</h5>
+                    <p class="text-muted">$90.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/men-03.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>Love Print</h5>
+                    <p class="text-muted">$150.00</p>
+                  </div>
+                </div>
+                </div>
+
+        </div>
+        <button class="btn btn-light shadow-sm position-absolute top-50 end-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-men', 1)">&gt;</button>
+    </div>
 </section>
 
-<!-- carousel pending  -->
+<section class="container my-5">
+    <div class="mb-4"><h1 class="fw-bold">Women's Latest</h1></div>
+    <div class="position-relative px-md-4">
+        <button class="btn btn-light shadow-sm position-absolute top-50 start-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-women', -1)">&lt;</button>
+        <div id="track-women" class="row flex-nowrap overflow-auto g-4 m-0 hide-scrollbar">
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/women-01.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>New Outfit</h5>
+                    <p class="text-muted">$75.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/women-02.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                    <h5>Spring Collection</h5>
+                    <p class="text-muted">$130.00</p>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/women-03.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>Classic Dress</h5>
+                    <p class="text-muted">$110.00</p>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/women-01.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>New Outfit</h5>
+                    <p class="text-muted">$75.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/women-02.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                    <h5>Spring Collection</h5>
+                    <p class="text-muted">$130.00</p>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/women-03.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div></div><div class="card-body px-0">
+                    <h5>Classic Dress</h5>
+                    <p class="text-muted">$110.00</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <button class="btn btn-light shadow-sm position-absolute top-50 end-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-women', 1)">&gt;</button>
+    </div>
+</section>
+
+<section class="container my-5">
+    <div class="mb-4"><h1 class="fw-bold">Kid's Latest</h1></div>
+    <div class="position-relative px-md-4">
+        <button class="btn btn-light shadow-sm position-absolute top-50 start-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-kids', -1)">&lt;</button>
+        <div id="track-kids" class="row flex-nowrap overflow-auto g-4 m-0 hide-scrollbar">
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/kid-01.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                    <h5>School Blue</h5>
+                    <p class="text-muted">$45.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/kid-02.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5>Summer Kid</h5>
+                  <p class="text-muted">$35.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/kid-03.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5>Classic Kid</h5>
+                  <p class="text-muted">$55.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/kid-01.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                    <h5>School Blue</h5>
+                    <p class="text-muted">$45.00</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/kid-02.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5>Summer Kid</h5>
+                  <p class="text-muted">$35.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 product-item">
+              <div class="card h-100 border-0 product-card">
+                <div class="img-wrapper">
+                  <img src="assets/images/kid-03.jpg" class="card-img-top">
+                  <div class="hover-overlay d-flex justify-content-center gap-2">
+                    <button class="btn btn-white"><i class="bi bi-eye"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-star"></i></button>
+                    <button class="btn btn-white"><i class="bi bi-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <h5>Classic Kid</h5>
+                  <p class="text-muted">$55.00</p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        <button class="btn btn-light shadow-sm position-absolute top-50 end-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-kids', 1)">&gt;</button>
+    </div>
+</section>
+
+
+<!-- explore our products section -->
 <div class="container">
 <div class="row">
+  <!-- left col -->
 
     <div class="col-lg-6">
         <h1 class="fw-bold pb-4">Explore Our Products</h1>
@@ -155,6 +462,7 @@
         </p>
         <button type="button" class="btn btn-outline-dark discover-btn">Discover More</button>
     </div>
+    <!-- right col -->
     <!-- 4 boxes -->
     <div class="col-lg-6">
         <div class="row">
@@ -186,11 +494,11 @@
     </div>
 </div>
 </div>
-
+<!-- newsletter section -->
 <div class="container mt-5">
   <div class="row">
 
-    <!-- left column -->
+    <!-- left column forms and button-->
     <div class="col-lg-7 col-md-12 pb-5">
      <h1 class="fw-bold">By Subscribing To Our Newsletter You Can Get 30% Off</h1>
      <p class="fst-italic text-muted pb-3">Details to details is what makes Hexashop different from the other themes.</p>
@@ -207,17 +515,14 @@
 
      <div class="col-12 col-lg-1">
         <button class="telegram-btn p-1 btn w-100 w-lg-auto" aria-label="Subscribe to newsletter">
-    <span class="material-symbols-outlined">
-        send
-    </span>
-</button>
+    <span class="material-symbols-outlined">send</span></button>
     </div>
     </div>
 
     </div>
 
 
-    <!-- right column -->
+    <!-- right column contents-->
     <div class="col-12 col-lg-5">
       <div class="row">
 
@@ -257,6 +562,7 @@
 </div>
 
 <!-- footer -->
+ <!-- footer part 1 -->
 
 <footer class="text-light mt-4 py-6">
   <div class=" container">
@@ -301,7 +607,9 @@
 
     </div>
   </div>
+
   <hr class="border-light">
+  <!-- footer part 2 -->
   <div class="row align-items-center py-4">
     <div class="col-lg-12 text-center">
     <p class="mb-2">Copyright © 2026 HexaShop Co., Ltd. All Rights Reserved.</p>
@@ -316,7 +624,7 @@
 </div>
   </div>
 </footer>
-
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

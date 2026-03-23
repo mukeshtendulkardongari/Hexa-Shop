@@ -146,3 +146,63 @@ footer ul li a:hover{
     opacity: 1;
     color: #aaa;
 }
+
+/* Scroll Track Setup */
+.hide-scrollbar {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory; /* Snap for smooth mobile feel */
+}
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+
+.product-item {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+/* Image Hover & Overlay Animation */
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.hover-overlay {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover .hover-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hover-overlay .btn-white {
+    background: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0; /* Square buttons */
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hover-overlay .btn-white:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Nav Buttons */
+.nav-btn {
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+}
