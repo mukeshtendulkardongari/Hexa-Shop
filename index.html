@@ -14,7 +14,7 @@
 <body>
 
 <!-- nav bar  -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow">
     <div class="container">
 
     <div class="navbar-brand d-flex flex-column ms-5">
@@ -72,59 +72,94 @@
   </div>
 </nav>
 <!-- hero section -->
-<div class="container-fluid mt-4">
-  <div class="row g-3">
+<div class="container-fluid mt-4 px-4">
+    <div class="row g-4">
 
-    <!-- Left Large Banner -->
-    <div class="col-lg-6 ">
-      <div class="banner-large text-white d-flex flex-column justify-content-center">
-        <h1 class="fw-bold display-4">We Are Hexashop</h1>
-        <p>Awesome, clean & creative HTML5 Template</p>
-        <button class="btn btn-outline-light">Purchase Now!</button>
-      </div>
+        <div class="col-lg-6">
+            <div class="banner-large d-flex flex-column justify-content-center">
+                <div class="banner-content text-white">
+                    <h1 class="fw-bold display-4">We Are Hexashop</h1>
+                    <p class="fst-italic">Awesome, clean & creative HTML5 Template</p>
+                    <button class="btn btn-outline-light rounded-0 px-4">Purchase Now!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6">
+                    <div class="category women position-relative">
+                        <div class="main-text text-white text-center">
+                            <h4 class="fw-bold">Women</h4>
+                            <p class="small">Best Clothes For Women</p>
+                        </div>
+                        <div class="category-hover">
+                            <div class="inner">
+                                <h5>Women</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn-discover">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="category men position-relative">
+                        <div class="main-text text-white text-center">
+                            <h4 class="fw-bold">Men</h4>
+                            <p class="small">Best Clothes For Men</p>
+                        </div>
+                        <div class="category-hover">
+                            <div class="inner">
+                                <h5>Men</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn-discover">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="category kids position-relative">
+                        <div class="main-text text-white text-center">
+                            <h4 class="fw-bold">Kids</h4>
+                            <p class="small">Best Clothes For Kids</p>
+                        </div>
+                        <div class="category-hover">
+                            <div class="inner">
+                                <h5>Kids</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn-discover">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="category accessories position-relative">
+                        <div class="main-text text-white text-center">
+                            <h4 class="fw-bold">Accessories</h4>
+                            <p class="small">Best Trend Accessories</p>
+                        </div>
+                        <div class="category-hover">
+                            <div class="inner">
+                                <h5>Accessories</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="btn-discover">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-
-    <!-- Right Section -->
-    <div class="col-lg-6">
-      <div class="row g-3">
-
-        <div class="col-md-6">
-  <div class="category women">
-          <h4>Women</h4>
-          <p>Best Clothes For Women</p>
-
-        </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="category men">
-            <h3>Men</h3>
-            <p>Best Clothes For Men</p>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="category kids">
-            <h3>Kids</h3>
-            <p>Best Clothes For Kids</p>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="category accessories">
-            <h3>Accessories</h3>
-            <p>Best Trend Accessories</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
 </div>
 
 <!-- carousels  -->
-
+<!-- men carousel -->
 <section class="container my-5">
     <div class="mb-4">
         <h1 class="fw-bold">Men's Latest</h1>
@@ -228,6 +263,8 @@
         <button class="btn btn-light shadow-sm position-absolute top-50 end-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-men', 1)">&gt;</button>
     </div>
 </section>
+
+<hr>
 
 <!-- women carousel -->
 <section class="container my-5">
@@ -333,6 +370,9 @@
         <button class="btn btn-light shadow-sm position-absolute top-50 end-0 translate-middle-y z-3 rounded-circle nav-btn" onclick="scrollCarousel('track-women', 1)">&gt;</button>
     </div>
 </section>
+
+<hr>
+
 <!-- kids carousel -->
 <section class="container my-5">
     <div class="mb-4">
@@ -444,6 +484,7 @@
     </div>
 </section>
 
+<hr>
 
 <!-- explore our products section -->
 <div class="container">
@@ -501,6 +542,96 @@
     </div>
 </div>
 </div>
+
+
+<!-- social media  -->
+
+<section class="social-media-section my-5 border-top pt-5">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2 class="fw-bold text-dark mb-1">Social Media</h2>
+                    <p class="text-muted fst-italic">Details to details is what makes Hexashop different from the other themes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-0">
+        <div class="row g-0">
+            <div class="col-2">
+                <div class="social-box">
+                    <img src="assets/images/instagram-01.jpg" alt="Social 1">
+                    <div class="social-overlay">
+                        <div class="overlay-content">
+                            <h6>Fashion</h6>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="social-box">
+                    <img src="assets/images/instagram-02.jpg" alt="Social 2">
+                    <div class="social-overlay">
+                        <div class="overlay-content">
+                            <h6>New Style</h6>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="social-box">
+                    <img src="assets/images/instagram-03.jpg" alt="Social 3">
+                    <div class="social-overlay">
+                        <div class="overlay-content">
+                            <h6>Brand</h6>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="social-box">
+                    <img src="assets/images/instagram-04.jpg" alt="Social 4">
+                    <div class="social-overlay">
+                        <div class="overlay-content">
+                            <h6>Makeup</h6>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="social-box">
+                    <img src="assets/images/instagram-05.jpg" alt="Social 5">
+                    <div class="social-overlay">
+                        <div class="overlay-content">
+                            <h6>Leather</h6>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="social-box">
+                    <img src="assets/images/instagram-06.jpg" alt="Social 6">
+                    <div class="social-overlay">
+                        <div class="overlay-content">
+                            <h6>Bag</h6>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
 <!-- newsletter section -->
 <div class="container mt-5">
   <div class="row">
