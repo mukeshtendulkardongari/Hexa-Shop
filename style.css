@@ -1,4 +1,32 @@
+/* navbar */
 
+@media (min-width: 768px) {
+  /* 1. Set the initial state of the dropdown menu */
+  .navbar-nav .dropdown-menu {
+    display: block;          /* Always 'block' so it can animate */
+    opacity: 0;             /* Hidden by default */
+    visibility: hidden;      /* Prevents clicking hidden links */
+    transform: translateY(10px); /* Starts slightly lower */
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;    /* Ensures it doesn't block other elements while hidden */
+  }
+
+  /* 2. State when hovering over the parent li.dropdown */
+  .nav-item.dropdown:hover > .dropdown-menu {
+    opacity: 1;             /* Fade in */
+    visibility: visible;     /* Make interactive */
+    transform: translateY(0);   /* Slide up to original position */
+    pointer-events: auto;    /* Allow clicking the links */
+  }
+}
+
+
+.navbar-nav .nav-link:hover, 
+.dropdown-item:hover {
+  color: #6c757d !important; 
+  transition: all 0.3s ease;
+}
+/* banner */
 /* Left Banner */
 .banner-large {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("assets/images/left-banner-image.jpg");
@@ -113,7 +141,10 @@
 .expbag{
     background-image:url("assets/images/explore-image-02.jpg")
 }
-
+p{
+    font-style: italic;
+    font-weight: 400;
+}
 
 /* newsletter */
 
@@ -149,69 +180,7 @@ button.telegram-btn:hover .material-symbols-outlined {
     color: #000000 !important;
     transform: translateX(3px) rotate(-10deg);
 }
-footer {
-    background-color: #2a2a2a !important; /* The Hexashop Dark Gray */
-    padding: 60px 0;
-}
-footer h6 {
-    color: #fff;
-    font-weight:700;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    padding-bottom: 15px;
-}
-footer ul li {
-    margin-bottom: 10px;
-    color: #fff;
-    font-size: 14px;
-}
-footer ul li a{
-    text-decoration:none;
-    color:white;
-    transition:all 0.3s;
-}
-footer ul li a:hover{
-    color:#aaa;
-}
-.footer-logo img {
-    max-width: 160px;
-}
-.footer-social a{
-    color:#ccffff;
-    font-size:20px;
-}
-.footer-social a:hover{
-    color:#cc6666;
-}
 
-
-@media (max-width: 991px) {
-    /* Target the columns directly */
-    footer .footer-col {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-        margin-bottom: 2rem;
-    }
-
-    footer ul.footer-links {
-        padding-left: 0 !important;
-        list-style: none;
-    }
-}
-
-.footer-links li a {
-    color: #fff;
-    text-decoration: none;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
-.footer-links li a:hover {
-    opacity: 1;
-    color: #aaa;
-}
 
 /* Scroll Track Setup */
 .hide-scrollbar {
@@ -312,14 +281,28 @@ footer ul li a:hover{
 }
 
 .overlay-content h6 {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
     margin-bottom: 8px;
     text-transform: capitalize;
 }
 
 .overlay-content i {
-    font-size: 24px;
+    font-size: 20px;
+}
+
+@media screen and (min-width:425px){
+
+    .overlay-content h6 {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+.overlay-content i {
+    font-size: 15px;
+}
 }
 
 /* Hover Effects */
@@ -332,13 +315,80 @@ footer ul li a:hover{
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .social-media-section .section-heading {
         text-align: center;
     }
-}
+} */
 
 hr{
-    border: 2px solid gray;
-    border: dotted;
+    border: 1px solid rgb(0, 0, 0) !important;
+    width: 80%;
+    margin: auto !important;
+}
+
+/* footer */
+
+footer {
+    background-color: #2a2a2a !important; /* The Hexashop Dark Gray */
+    padding: 60px 0;
+}
+footer h6 {
+    color: #fff;
+    font-weight:700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-bottom: 15px;
+}
+footer ul li {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+footer ul li a{
+    text-decoration:none;
+    color:white;
+    transition:all 0.3s;
+}
+footer ul li a:hover{
+    color:#aaa;
+}
+.footer-logo img {
+    max-width: 160px;
+}
+.footer-social a{
+    color:#ccffff;
+    font-size:20px;
+}
+.footer-social a:hover{
+    color:#cc6666;
+}
+
+
+@media (max-width: 991px) {
+    /* Target the columns directly */
+    footer .footer-col {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 2rem;
+    }
+
+    footer ul.footer-links {
+        padding-left: 0 !important;
+        list-style: none;
+    }
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+    opacity: 1;
+    color: #aaa;
 }
