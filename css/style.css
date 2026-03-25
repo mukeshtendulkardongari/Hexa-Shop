@@ -29,7 +29,7 @@
 /* banner */
 /* Left Banner */
 .banner-large {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("assets/images/left-banner-image.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../assets/images/left-banner-image.jpg");
     background-size: cover;
     background-position: center;
     height: 530px;
@@ -47,10 +47,10 @@
     overflow: hidden;
 }
 
-.women { background-image: url("assets/images/baner-right-image-01.jpg"); }
-.men { background-image: url("assets/images/baner-right-image-02.jpg"); }
-.kids { background-image: url("assets/images/baner-right-image-03.jpg"); }
-.accessories { background-image: url("assets/images/baner-right-image-04.jpg"); }
+.women { background-image: url("../assets/images/baner-right-image-01.jpg"); }
+.men { background-image: url("../assets/images/baner-right-image-02.jpg"); }
+.kids { background-image: url("../assets/images/baner-right-image-03.jpg"); }
+.accessories { background-image: url("../assets/images/baner-right-image-04.jpg"); }
 
 /* Initial Text Styling */
 .main-text {
@@ -136,10 +136,10 @@
     background-color:rgb(217, 215, 215);
 }
 .expwomen{
-    background-image:url("assets/images/explore-image-01.jpg")
+    background-image:url("../assets/images/explore-image-01.jpg")
 }
 .expbag{
-    background-image:url("assets/images/explore-image-02.jpg")
+    background-image:url("../assets/images/explore-image-02.jpg")
 }
 p{
     font-style: italic;
@@ -392,3 +392,42 @@ footer ul li a:hover{
     opacity: 1;
     color: #aaa;
 }
+
+
+/* about page banner is same for contact page */
+
+.about-banner{
+    background-image: url(../assets/images/about-us-page-heading.jpg);
+    background-size: cover;
+    margin: 50px 0 50px;
+}
+.about-banner h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.about-banner-inner{
+    text-align: center;
+    padding: 70px 0 70px;
+
+}
+
+/* products page  banner is same for single product page */ 
+.product-banner{
+    background-image: url(../assets/images/products-page-heading.jpg);
+    background-size: cover;
+    margin: 50px 0 50px;
+}
+.product-banner h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.product-banner-inner{
+    text-align: center;
+    padding: 70px 0 70px;
+
+}
+
+
+
+/* single product page  */
+/* contact page */
