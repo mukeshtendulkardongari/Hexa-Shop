@@ -397,8 +397,9 @@ footer ul li a:hover{
 /* about page banner is same for contact page */
 
 .about-banner{
-    background-image: url(../assets/images/about-us-page-heading.jpg);
-    background-size: cover;
+    background-image: url("../assets/images/about-us-page-heading.jpg");
+    /* background-size: cover; */
+    background-position: center;
     margin: 50px 0 50px;
 }
 .about-banner h1{
@@ -407,13 +408,27 @@ footer ul li a:hover{
 }
 .about-banner-inner{
     text-align: center;
-    padding: 70px 0 70px;
+    padding: 80px 0 80px;
 
+}
+.about-left img{
+    width: 100%; 
+}
+
+/* Ensure all images have the same height without stretching */
+.card img {
+  width: 100%;
+}
+
+/* Adjust the card body to not take up extra space */
+.card-body {
+  flex: none; 
+  padding-bottom: 2rem;
 }
 
 /* products page  banner is same for single product page */ 
 .product-banner{
-    background-image: url(../assets/images/products-page-heading.jpg);
+    background-image: url("../assets/images/products-page-heading.jpg");
     background-size: cover;
     margin: 50px 0 50px;
 }
