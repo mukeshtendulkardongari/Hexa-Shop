@@ -428,7 +428,7 @@ footer ul li a:hover{
 
 /* products page  banner is same for single product page */ 
 .product-banner{
-    background-image: url("../assets/images/products-page-heading.jpg");
+    background-image: url("assets/images/products-page-heading.jpg");
     background-size: cover;
     margin: 50px 0 50px;
 }
